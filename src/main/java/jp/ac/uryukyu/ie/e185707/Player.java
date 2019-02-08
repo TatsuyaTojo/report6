@@ -4,7 +4,10 @@ import java.util.*;
 public class Player {
         int hand;
 
-        public void setHand() {
+    /**
+     * Playerが入力した手を数値化するメソッド。
+     */
+    public void setHand() {
             System.out.print("「グー」「チョキ」「パー」のどれかを入力してください。＞");
             Scanner sc = new Scanner(System.in);
             String inputHand = sc.nextLine();
@@ -20,7 +23,7 @@ public class Player {
                     hand = 2;
                     break;
                 default:
-                    System.out.println("間違えたので終了します…。");
+                    System.out.println("エラー");
             }
         }
 

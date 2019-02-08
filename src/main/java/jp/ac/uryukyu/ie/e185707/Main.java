@@ -1,6 +1,6 @@
 package jp.ac.uryukyu.ie.e185707;
 
-public class Janken {
+public class Main {
     static String[] handList = {"グー","チョキ","パー"};
 
     static void startMessage() {
@@ -11,6 +11,10 @@ public class Janken {
         System.out.println("ありがとう！また遊ぼうね！");
     }
 
+    /**
+     * プログラムの実行をするメソッド。
+     * @param args
+     */
     public static void main(String[] args) {
         Player player = new Player();
         CPU cpu = new CPU();
